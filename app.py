@@ -1,6 +1,7 @@
 import pickle
 import streamlit as st
-
+# Deployed app link
+#https://crop-recommendation-systemgit-khee8pule73dovuasfeaub.streamlit.app/
 with open('Crop_Recommendation_model.pkl', 'rb') as Crop_Recommendation_classifier:
     Crop_Recommendator = pickle.load(Crop_Recommendation_classifier)
 
