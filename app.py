@@ -32,5 +32,5 @@ with st.form(key="form"):
         if not nitrogen or not Phosphorous or not Potassium or not temperature or not humidity or not ph or not rainfall:
             st.warning("Please provide full information")
         else:
-            recommended_crop=Crop_Recommendator.predict([[nitrogen,Phosphorous,Potassium,temperature,humidity,ph,rainfall]])[0]
+            recommended_crop=Crop_Recommendator.predict([[nitrogen,Phosphorous,Potassium,temperature,humidity,ph,rainfall]])
             st.info(f"Based on the data provided,You are suggested to grow {recommended_crop}")
